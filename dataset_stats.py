@@ -9,8 +9,8 @@ emo_dict = {0: 'Surprise',
             4: 'Sad',
             5: 'Angry',
             6: 'Neutral'}
-raf_path = './data/RafDB'
-base_dataset = pd.read_csv(os.path.join(raf_path, 'rafdb/list_patition_label.txt'),
+raf_path = r'D:\datasets\RafDB'
+base_dataset = pd.read_csv(os.path.join(raf_path, 'list_patition_label.txt'),
                            sep=' ', header=None,
                            names=['img', 'label'])
 add_align = lambda x: str(x).split('.')[0] + '_aligned.jpg'
